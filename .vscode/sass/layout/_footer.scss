@@ -1,0 +1,121 @@
+.footer-logo {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--accent-color);
+}
+
+.span-footer-logo {
+  color: var(--secondary-color);
+}
+
+.footer {
+  background-color: var(--dark-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-list .link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--secondary-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-mail {
+  opacity: 0.6;
+}
+
+.footer-tel {
+  opacity: 0.6;
+}
+.footer-list .link:hover,
+.footer-list .link:focus {
+  color: var(--accent-color);
+}
+.address {
+  margin-top: 20px;
+}
+.join {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+.footer-icon-list {
+  display: flex;
+}
+.footer-icon-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon {
+  fill: var(--secondary-color);
+  width: 20px;
+  height: 20px;
+}
+.footer-icon-item + .footer-icon-item {
+  margin-left: 10px;
+}
+
+.contacts {
+  margin-right: 70px;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--accent-color);
+}
+.connect {
+  margin-right: 93px;
+}
+.footer-input {
+  display: inline-flex;
+  align-items: center;
+  /* height: 50px; */
+  width: 358px;
+  background: var(--dark-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+}
+.footer-btn-subscription {
+  background: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: var(--secondary-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 28px;
+  padding-left: 29px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
