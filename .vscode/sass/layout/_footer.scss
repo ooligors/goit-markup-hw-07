@@ -1,5 +1,5 @@
 .footer-logo {
- @ extend %logo;
+  @extend %logo;
 }
 
 .span-footer-logo {
@@ -110,7 +110,7 @@
   // display: inline-flex;
   align-items: center;
   // justify-content: space-between;
-  @include position(inline-flex , space-between);
+  @include position(inline-flex, space-between);
   box-sizing: border-box;
   border-radius: 4px;
 }

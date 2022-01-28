@@ -20,7 +20,7 @@
 }
 
 .what-we-do-list {
-  @include position(space-between);
+  @include position(flex, space-between);
 }
 .what-we-do-overlay {
   position: absolute;
