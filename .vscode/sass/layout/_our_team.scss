@@ -6,8 +6,7 @@
 }
 
 .team-list {
-  display: flex;
-  justify-content: center;
+  @include position();
 }
 
 .team-item {
@@ -53,10 +52,9 @@
   height: 44px;
   background-color: var(--white-background);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
+  @include position();
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 
   &:hover,
   &:focus {
@@ -65,8 +63,7 @@
 }
 
 .team-icon-list {
-  display: flex;
-  justify-content: center;
+  @include position();
 }
 
 .team-icon-item + .team-icon-item {
@@ -77,7 +74,7 @@
   fill: #afb1b8;
   width: 20px;
   height: 20px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
   .team-icon-link:hover .team-icon,
   .team-icon-link:focus & {
     fill: var(--secondary-color);

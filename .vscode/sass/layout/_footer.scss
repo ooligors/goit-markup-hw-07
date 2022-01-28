@@ -1,9 +1,5 @@
 .footer-logo {
-  font-family: var(--second-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  color: var(--accent-color);
+ @ extend %logo;
 }
 
 .span-footer-logo {
@@ -15,6 +11,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -24,23 +21,22 @@
   font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-mail {
-  opacity: 0.6;
-}
-
+.footer-mail,
 .footer-tel {
   opacity: 0.6;
 }
-.footer-list .link:hover,
-.footer-list .link:focus {
-  color: var(--accent-color);
-}
+
 .address {
   margin-top: 20px;
 }
@@ -58,10 +54,13 @@
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
+  @include position();
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-icon {
@@ -77,17 +76,12 @@
   margin-right: 70px;
 }
 
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-  background-color: var(--accent-color);
-}
 .connect {
   margin-right: 93px;
 }
 .footer-input {
   display: inline-flex;
   align-items: center;
-  /* height: 50px; */
   width: 358px;
   background: var(--dark-background);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -113,9 +107,10 @@
   font-weight: 700;
   padding-right: 28px;
   padding-left: 29px;
-  display: inline-flex;
+  // display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
+  @include position(inline-flex , space-between);
   box-sizing: border-box;
   border-radius: 4px;
 }

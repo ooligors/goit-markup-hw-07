@@ -20,8 +20,7 @@
 }
 
 .what-we-do-list {
-  display: flex;
-  justify-content: space-between;
+  @include position(space-between);
 }
 .what-we-do-overlay {
   position: absolute;

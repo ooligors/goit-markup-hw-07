@@ -1,0 +1,4 @@
+@mixin position($dp: flex, $jc: center) {
+  display: $dp;
+  justify-content: $jc;
+}
