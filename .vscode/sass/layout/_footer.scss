@@ -1,85 +1,91 @@
-.footer-logo {
+.logo {
   @extend %logo;
-}
 
-.span-footer-logo {
-  color: var(--secondary-color);
+  &__span--white {
+    color: var(--secondary-color);
+  }
 }
 
 .footer {
   background-color: var(--dark-background);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &__join {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    align-items: flex-end;
+  }
+
+  &__contacts {
+    margin-right: 70px;
+  }
+
+  &__connect {
+    margin-right: 93px;
+  }
 }
 
 .footer-container {
   display: flex;
   align-items: baseline;
 }
-.footer-list .link {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
-  color: var(--secondary-color);
-  @extend %transition;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-mail,
-.footer-tel {
-  opacity: 0.6;
-}
 
 .address {
   margin-top: 20px;
-}
-.join {
-  color: var(--secondary-color);
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  align-items: flex-end;
-}
-.footer-icon-list {
-  display: flex;
-}
-.footer-icon-link {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  @include position();
-  align-items: center;
-  @extend %transition;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+
+  &__list .link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--secondary-color);
+    @extend %transition;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 
-.footer-icon {
+.address-mail,
+.address-tel {
+  opacity: 0.6;
+}
+
+.social-icons {
+  display: flex;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @include position();
+    align-items: center;
+    @extend %transition;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+}
+
+.social-icon {
   fill: var(--secondary-color);
   width: 20px;
   height: 20px;
 }
-.footer-icon-item + .footer-icon-item {
-  margin-left: 10px;
-}
 
-.contacts {
-  margin-right: 70px;
-}
-
-.connect {
-  margin-right: 93px;
-}
-.footer-input {
+.form-subscription__input {
   display: inline-flex;
   align-items: center;
   width: 358px;
@@ -94,7 +100,7 @@
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
 }
-.footer-btn-subscription {
+.subscription-btn {
   background: var(--accent-color);
   width: 200px;
   height: 50px;
