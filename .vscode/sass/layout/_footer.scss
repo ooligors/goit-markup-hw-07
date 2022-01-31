@@ -67,7 +67,7 @@
     border-radius: 50%;
     @include position();
     align-items: center;
-    @extend %transition;
+    @extend %transition-background;
     &:hover,
     &:focus {
       background-color: var(--accent-color);

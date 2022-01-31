@@ -97,7 +97,7 @@
     padding: 63px 24px;
     opacity: 0;
     transform: translateY(100%);
-    @extend %transition;
+    @extend %transition-transform;
 
     .portfolio__card:hover & {
       opacity: 1;

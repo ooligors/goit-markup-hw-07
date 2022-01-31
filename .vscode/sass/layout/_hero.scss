@@ -46,7 +46,7 @@
 
   color: var(--secondary-color);
   cursor: pointer;
-  @extend %transition;
+  @extend %transition-background;
 
   &:hover,
   &:focus {

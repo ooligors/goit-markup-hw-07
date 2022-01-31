@@ -47,7 +47,7 @@
     border-radius: 50%;
     @include position();
     align-items: center;
-    @extend %transition;
+    @extend %transition-background;
 
     &:hover,
     &:focus {
@@ -63,7 +63,7 @@
     fill: #afb1b8;
     width: 20px;
     height: 20px;
-    @extend %transition;
+    @extend %transition-fill;
     .social-network__link:hover &,
     .social-network__link:focus & {
       fill: var(--secondary-color);
